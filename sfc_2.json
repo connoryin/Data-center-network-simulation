@@ -1,0 +1,21 @@
+{
+    "NF_CHAIN":["nat"],
+    "chain_id" : 2,
+    "nat" : {
+        "image" : "nat",
+        "interfaces" : ["eth0", "eth1"],
+        "init_script" : "/init_nat.sh"
+    },
+    "SRC":{
+        "MAC" : "00:00:00:00:00:03",
+        "SWITCH_DPID" : 1,
+        "PORT" : 3,
+        "IP" : "192.168.1.3"
+    },
+    "DST" : {
+        "MAC" : "00:00:00:00:00:04",
+        "SWITCH_DPID" : 2,
+        "PORT" : 3,
+        "IP" : "145.12.131.93"
+    }
+}
